@@ -1,0 +1,105 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber Security Handbook: Cyber Security Tools</title>
+    <link rel="stylesheet" href="css/framework.css">
+    <link rel="stylesheet" href="css/page-styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <span>
+                <li><a href="index.html">The Cyber Security Handbook</a></li>
+            </span>
+            <li><a href="practices.html">General Practices</a></li>
+            <li><a href="tools.html">Cyber Security Tools</a></li>
+            <li><a href="privacy.html">Internet Privacy Protection</a></li>
+        </ul>
+    </nav>
+    <header class="wrapper">
+        <h1>Cyber Security Tools</h1>
+        <p id="caption">by Frank Chen and Kai Gutierrez</p>
+        <p>Here are some tools on how to keep yourself secure on the internet.</p>
+    </header>
+    <main>
+        <section id="VPN" class="wrapper">
+            <h3>VPN</h3>
+            <h4>What’s VPN?</h4>
+            <p>A <b>Virtual Private Network</b> (VPN) encrypts your internet traffic and routes it through a secure server, masking your IP
+            address and location. This prevents ISPs from seeing your online activities, and makes it significantly harder for
+            hackers to intercept your data.</p>
+            <h4>VPN Perks</h4>
+            <ul>
+                <li>Hides your IP address - prevents websites from identifying your real location.</li>
+                <li>Encrypted internet traffic - Protectects internet traffic on public wifi and ISPs</li>
+                <li>Bypass censorship - Access blocked websites in restrictive regions.</li>
+                <li>Avoid ISP Tracking - Stops your ISP from selling your browsing data.</li>
+            </ul>
+            <h4>Best VPN Practices</h4>
+            <ul>
+                <li>Choose a no-log VPN like Mullvad, ProtonVPN, or IVPN to ensure your data isn’t stored. (Avoid: VPN’s that log data (e.g.
+                Express VPN, NordVPN, Surfshark))</li>
+                <li>Use Stealth mode or Obfuscation to bypass VPN blocking (useful in countries with internet restrictions).</li>
+                <li>Configure multi-hop VPN connections for extra security - Sometimes called tor browsing</li>
+            </ul>
+        </section>
+        <section id="fingerprint" class="wrapper">
+            <h3>Browser Obscurity and Fingerprinting Prevention</h3>
+            <h4>What is Browser Fingerprinting?</h4>
+            <p>Even if you hide your IP with a VPN, websites can still track you through browser fingerprinting. This method collects
+            unique browser details like installed fonts, screen resolution, and extensions to identify users.</p>
+
+            <h4>Preventions</h4>
+            <ul>
+                <li>Use privacy-focused browsers like Brave, Libra wolf, or Tor Browser. (Do try to avoid things like Chrome, edge and
+                safari because they do collect telemetry and browsing data)</li>
+                <li>Disable Javascript (or use NoScript for site-by-site control).</li>
+                <li>Use CanvasBlocker to randomize fingerprinting data.</li>
+                <li>Regularly clear cookies and use private browsing modes.</li>
+                <li>Avoid logging into accounts that link back to your real identity.</li>
+            </ul>
+        </section>
+        <section class="wrapper">
+            <h3>uBlock Origin: The Ultimate Privacy Tool</h3>
+            <p>uBlock Origin, it’s not just an ad blocker, it also blocks scripts, trackers, and malware.</p>
+
+            <h4>uBlock Personal setting</h4>
+            <ul>
+                <li>Enable EasyPrivacy and Fanboy’s Enhanced Tracking List in filter settings.</li>
+                <li>Use medium mode to block third-party scripts by default.</li>
+                <li>Combine with Decentraleyes to stop reliance on tracking-heavy CDNs.</li>
+                <li>Block first-party scripts for extra privacy (but may break some websites)</li>
+            </ul>
+        </section>
+        <section class="wrapper">
+            <h3>Private Search Engines</h3>
+            <h4>Why Avoid Google?</h4>
+            <p>Google tracks searches and build a detailed profile on users. Alternative search engines do not log your queries.</p>
+            <h4>Great Private Search Engines</h4>
+            <ul>
+                <li>DuckDuckGo - No logs, but results are Bing-based.</li>
+                <li>Brave Search - Fully independent index and no tracking.</li>
+            </ul>
+        </section>
+        <section class="wrapper">
+            <h3>Data Leak Prevention.</h3>
+            <h4>How data gets leaked</h4>
+            <p>Your personal data can end up in the wrong hands through multiple channels. Even if you think your accounts are secure,
+            data leaks and breaches happen all the time.</p>
+            <p>Many people forget about old accounts they created years ago forums, online stores, social media sites, or email
+            accounts they no longer use. If one of these accounts gets hacked the credentials (email. Username, password, and
+            sometimes more personal information like addresses or phone numbers can be leaked.</p>
+            <p>Example: If you had an old MySpace, LinkedIn, or Adobe accounts, those services have all suffered major data breaches.
+            Even if you no longer use those accounts, hackers can still use the leaked data to target you elsewhere</p>
+            <h4>How to protect your Data</h4>
+            <ul>
+                <li>You can use something like HaveIBeenPwned to see if your email or passwords have been exposed in past data breaches,
+                THis site scans billions of leaked credentials and tells you if your accounts have been compromised.</li>
+                <li>If it appears to have been, immediately change your password for that account, Enable two-factor authentication. If the
+                account is inactive delete it (and do delete unused accounts)</li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>
