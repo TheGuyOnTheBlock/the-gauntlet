@@ -1,0 +1,14 @@
+header, section{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+#caption{
+    font-style: italic;
+    margin-bottom: 16px;
+}
+section p{
+    margin: 16px 0;
+}
+#data_protection ul li, #data_privacy ul li, #data_collection ul li{
+    display:inline;
+}

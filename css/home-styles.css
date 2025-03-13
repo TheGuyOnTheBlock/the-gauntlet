@@ -1,0 +1,129 @@
+/* Header styles */
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    top:0;
+    height:100vh;
+    background-color:black;
+    color: white;
+    margin-bottom:48px;
+}
+.typewriter h1 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid transparent; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .05em; /* Adjust as needed */
+    animation:
+        typing 3s steps(40, end),
+        blink-caret .75s step-end 6;
+}
+.typewriter-end h1{
+    color:transparent;
+    overflow: hidden;
+    border-right: .1em solid transparent;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .05rem;
+    font-size: 1.6rem;
+    animation:
+        typing 3s steps(40, end) 4.5s,
+        blink-caret-end .75s step-end 4.5s infinite;
+}
+/* Main Styles */
+.challenges div{
+    margin: 1rem 0;
+}
+
+.challenges ul li{
+    margin:.5rem 1rem;
+}
+
+.challenges li ul li{
+    margin-left:1.5rem;
+}
+
+#challenge span{
+    font-size: 1.5rem;
+}
+
+#news{
+    padding-top:2rem;
+    padding-bottom:2rem;
+}
+#news img{
+    height: 18rem;
+}
+#news h2{
+    text-align: center;
+}
+#news hr{
+    width: 50%;
+    margin: 24px auto;
+}
+#news .col-6{
+    text-align: center;
+}
+#news .col-6 p{
+    text-align: left;
+    margin:12px 0;
+    padding:0 12px;
+}
+#tools{
+    color: white;
+    background-color: black;
+    margin: 16px 0;
+    padding: 24px 0;
+}
+#tools p, #tools a p{
+    color: white;
+    margin-top: 16px;
+}
+#tools .col-4 {
+    text-align: center;
+    padding:24px;
+}
+#tools img, #tools a img{
+    height:10rem;
+    width:10rem;
+    border: 1px solid white;
+}
+/*Queries*/
+@media (max-width:1170px) {
+    .typewriter h1 {
+        font-size: 1.6rem;
+    }
+    .typewriter-end h1 {
+        font-size: .8rem;
+    }
+    #news img{
+        height:160px;
+    }
+    #tools img, #tools a img{
+        height: 3rem;
+        width: 3rem;
+    }
+}
+/* Animations */
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color:white; }
+}
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: white; }
+}
+@keyframes blink-caret-end{
+    from, to { border-color: transparent; color:white;}
+    50% { border-color: white; }
+}
