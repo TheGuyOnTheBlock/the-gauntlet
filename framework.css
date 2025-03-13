@@ -1,0 +1,201 @@
+/* Kai Gutierrez - Framework */
+/*:root {
+    --main-white: #FFF8F0;
+    --main-navy: #10182C;
+    --main-purple: #38405F;
+    --main-pink: #EE4266;
+    --main-orange:#FFA500;
+    --main-skyblue:#779BE7;
+}*/
+/* Grid Styles */
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+nav::after,
+header::after,
+section::after,
+aside::after,
+main::after,
+footer::after,
+.row::after{
+    content:"";
+    display:table;
+    clear:both;
+}
+.row{
+    margin:16px 0;
+}
+.col-1 {width: calc(100%*(1/12));}
+.col-2 {width: calc(100%*(1/6));}
+.col-3 {width: 25%;}
+.col-4 {width: calc(100%/3);}
+.col-5 {width: calc(100%*(5/12));}
+.col-6 {width: 50%;}
+.col-7 {width: calc(100%*(7/12));}
+.col-8 {width: calc(100%*(2/3));}
+.col-9 {width: 75%;}
+.col-10 {width: calc(100%*(5/6));}
+.col-11 {width: calc(100%*(11/12));}
+.col-12 {width: 100%;}
+[class*="col-"] {
+  float: left;
+  padding: 0 16px;
+}
+.wrapper{
+    max-width:90%;
+    margin:0 auto;
+}
+@media (min-width:1300px){
+    .wrapper{
+        max-width: 1170px;
+    }
+}
+
+
+/* Typography */
+h1{
+    font-size: 3em;
+    font-family: 'Roboto', sans-serif;
+}
+h2{
+    font-size: 2.77em;
+}
+h1,h2,h3,h4,h5,h6{
+    margin:16px 0;
+}
+nav li{
+    font-size: 1.6rem;
+}
+
+a{
+    text-decoration: none;
+}
+ul,ol{
+    list-style-position: inside;
+}
+/* Queries */
+@media (max-width:1170px){
+    
+    h1{
+        font-size:2.08rem;
+    }
+    h2{
+        font-size:1.92rem;
+    }
+    h3{
+        font-size:1.76rem;
+    }
+    p{
+        font-size:1rem;
+    }
+    nav li {
+        font-size: 1rem;
+    }
+}
+
+/* Navbar styles */
+nav{
+    background-color:black;
+    padding:14px;
+    position: sticky;
+    top:0;
+    z-index: 1;
+}
+nav span{
+    display: inline-block;
+    float:left;
+    color:lightgrey;
+}
+nav ul{
+    margin:0;
+    padding:0;
+    list-style:none;
+    float:right;
+}
+nav li{
+    float:left;
+}
+nav a{
+    color:#D3D3D3;
+    display:block;
+    padding:12px 16px;
+}
+nav a:hover{
+    color:#fff;
+}
+nav .dropdown-content{
+    background-color:black;
+    width:160px;
+    box-shadow:0 8px 16px black;
+    position:absolute;
+    display:none;
+}
+.dropdown:hover .dropdown-content{
+    display:block;
+}
+
+/* Footer Styles */
+footer{
+    background-color:black;
+    color:white;
+    text-align:center;
+    padding:18px;
+    bottom:0;
+    width:100%;
+}
+/* Image Styles */
+img.img-fluid{
+    width:100%;
+}
+img.img-fluid-height{
+    height:100%;
+}
+img.img-rounded{
+    border-radius:5px;
+}
+img.img-circle{
+    border-radius:50%;
+}
+
+/* Button Styles */
+[class*="btn-"]{
+    display:inline-block;
+    padding:10px;
+    border-radius:5px;
+}
+.btn-primary{
+    color:white;
+    background-color:#007BFF;
+}
+.btn-secondary{
+    color:white;
+    background-color:#6c757d;
+}
+.btn-outline{
+    border: solid 1px #6c757d;
+    color:#6c757d;
+}
+/* Callout Primary */
+[class*="callout-"]{
+    padding:20px;
+    margin-bottom:10px;
+    border: solid 1px transparent;
+    border-radius: 5px;
+    box-shadow:inset 0 1px rgba(0, 0, 0, 0.05);
+
+}
+.callout-primary{
+    color:#004085;
+    background-color:#cce5ff;
+    border-color: #b8daff;
+
+}
+/* Callout Secondary */
+.callout-secondary{
+    color:black;
+    background-color:#f5f5f5;
+    border-color: #e3e3e3;
+}
